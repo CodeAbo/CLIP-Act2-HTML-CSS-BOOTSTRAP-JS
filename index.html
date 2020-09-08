@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Estilos propios-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Instrumentos</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" alt="Logo del sitio" width="150" height="auto">
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menu de navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tienda.html" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center">
+        <h2 class="my-5">Instrumentos destacados</h2>
+        <div class="row">
+            <article class="col-12 col-md-4 mb-4">
+                <div class="card shadow-lg">
+                    <img src="img/guitarra acustica.png " class="card-img-top " alt="guitarra acustica ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Guitarra Acustcia</h4>
+                        <p class="card-text ">Guitarra acustica profecional para conciertos de un tono cálido y suave</p>
+                        <p class="font-weight-bold text-success h5 ">$70000</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-4 mb-4">
+                <div class="card shadow-lg">
+                    <img src="img/bateria electrica.png " class="card-img-top " alt="bateria electrica ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">bateria Electrica</h4>
+                        <p class="card-text ">Bateria electrica de estudio. Modelo peglable, practico y rápido para transportar</p>
+                        <p class="font-weight-bold text-success h5 ">$130000</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-4">
+                <div class="card shadow-lg">
+                    <img src="img/trompeta.png " class="card-img-top " alt="Trompeta ">
+                    <div class="card-body ">
+                        <h4 class="card-title ">Trompeta Profesional</h4>
+                        <p class="card-text ">Campana de latón dorado hecha a mano de una sola piezas </p>
+                        <p class="font-weight-bold text-success h5 ">$245000</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <a href="tienda.html " class="my-4 btn btn-danger btn-lg">Ver Mas Instrumentos</a>
+    </main>
+
+    <section class="bg-info">
+        <div id="adivinanza" class="container text-center text-white font-weight-bold my-4 p-5">
+            <h3>Adivinanza</h3>
+
+            <p>¿ A que tipo de instrumento pertenece la trompeta ?</p>
+
+            <div class="input-group">
+                <input id="respuestaUsuario" type="text" class="form-control" placeholder="Introduce la respuesta" aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                    <button id="enviarRespuesta" class="btn btn-success" onclick="adivinanza()" type=" button">Enviar respuesta</button>
+                </div>
+            </div>
+            <div id="cantidadIntentos" class="my-2">
+                Cantidad de intentos: <strong>a</strong>
+            </div>
+
+            <div id="alertaGanar" class="d-none" role="alert">
+                <strong>Respuesta Correcta! Ganaste un 10% de descuento.</strong>
+            </div>
+            <div id="alertaIncorrecto" class="d-none" role="alert">
+                <strong>Respuesta Incorrecta!</strong>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="imagen-contacto py-4 mt-3 ">
+        <div class="container text-danger text-center ">
+            <h2 class="font-weight-bolder h1 ">Encuentra tu instrumento ideal</h2>
+            <p class="font-weight-bold ">Por cualquier duda puedes llenar el formulario de contacto, y te contactaremos a la brevedad</p>
+            <a href="contacto.html " class="btn btn-danger ">Contactános</a>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark ">
+        <div class="container ">
+            <div class="row ">
+                <nav class="col-md-6 d-none d-md-block ">
+                    <a href="index.html " class="btn text-white ">Inicio</a>
+                    <a href="tienda.html " class="btn text-white ">Tienda</a>
+                    <a href="contacto.html " class="btn text-white ">Contacto</a>
+                </nav>
+                <div class="col-11 col-md-6 ">
+                    <div class="text-center text-md-right bg-dark text-white m-0 ">
+                        <p class="m-0 py-3 ">Copyright &copy; 2020. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/scripts.js "></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>
