@@ -22,7 +22,7 @@ function adivinanza() {
     if ((respuestaUsuario.value.toLowerCase()) === respuestaCorrecta) {
 
         alertaIncorrecto.setAttribute('class', 'd-none');
-        intentos = 0;
+        intentos--;
         enviarRespuesta.setAttribute('disabled', '');
         alertaGanar.setAttribute('class', 'd-block alert alert-success my-3');
     } else {
@@ -32,15 +32,17 @@ function adivinanza() {
         alertaIncorrecto.setAttribute('class', 'd-block alert alert-warning my-3');
 
         if (intentos === 2) {
-            var contenido = document.createElement('li');
+            var contenido = document.createElement('p');
             var texto = document.createTextNode('pista 1 - No es de Percusión');
             contenido.appendChild(texto);
+            contenido.setAttribute('class', 'bg-info p-3');
             contenidoAdivinanza.appendChild(contenido);
 
         } else if (intentos === 1) {
-            var contenido = document.createElement('li');
+            var contenido = document.createElement('p');
             var texto = document.createTextNode('pista 2 - Puede ser de -Cuerda -Viento -Instrumento electrico');
             contenido.appendChild(texto);
+            contenido.setAttribute('class', 'bg-info p-3');
             contenidoAdivinanza.appendChild(contenido);
         } else if (intentos === 0) {
             alertaIncorrecto.setAttribute('class', 'd-block alert alert-danger my-3');
