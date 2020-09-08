@@ -48,19 +48,19 @@
             <h2 class="font-weight-bolder mb-4 text-center"> Contacto </h2>
             <div class="form-group">
                 <label for="formGroupExampleInput">Nombre</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tu Nombre" required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Apellido</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tu Apellido" required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Email</label>
-                <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="Another input">
+                <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="Tu Email" required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Telefono</label>
-                <input type="tel" class="form-control" id="formGroupExampleInput4" placeholder="Another input">
+                <input type="tel" class="form-control" id="formGroupExampleInput4" placeholder="Tu Telefono" required>
             </div>
 
             <div class="form-group">
@@ -109,14 +109,44 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            <button type="submit" class="btn btn-success mb-2">Enviar</button>
             <input type="reset" value="Limpiar" class="btn btn-danger mb-2 ml-5">
         </form>
 
     </main>
 
+    <section class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Ciudad</th>
+                    <th>Nombre del local</th>
+                    <th>Direccion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Cordoba</th>
+                    <td>La Clavija Tienda Musical</td>
+                    <td>Av. Carlos Federico Gauss 5619</td>
+                </tr>
+                <tr>
+                    <th scope="row">Santa Fe</th>
+                    <td>Music Craft</td>
+                    <td>San Martin 2365 Loc. 15 & 34</td>
+                </tr>
+                <tr>
+                    <th scope="row">Buenos Aires</th>
+                    <td>Todomúsica SA</td>
+                    <td>Av. Warnes 2280</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
     <section class="mapa">
-        <h2 class="centrar-texto">Nuestra Ubicacion en Cordoba</h2>
+        <h2 class="text-center">Nuestra Ubicacion en Cordoba</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13628.783211582677!2d-64.258802292399!3d-31.353575581440353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb0d590b68f%3A0x312b1f74bff3c9a3!2sLa%20Clavija%20Tienda%20Musical!5e0!3m2!1ses-419!2sar!4v1598138724086!5m2!1ses-419!2sar"
             width="1900" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
